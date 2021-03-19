@@ -1,0 +1,5 @@
+package FarmMed;
+
+public enum tipmed {
+	ANTIINFLAMATOARE,ANALGEZICE,ANTICOAGULANTE,PROBIOTICE
+}

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1b85b64-2296-4656-a6f8-c45257b95709" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produs/_produs_index_ro.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/teme/standard/standard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="56" column="85" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shoes.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-969" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/teme/standard/stil.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3383">
+              <caret line="199" column="7" selection-start-line="199" selection-start-column="7" selection-end-line="199" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autentificare/_autentificare_index_ro.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autentificare/_autentificare_kerveny.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact/_contact_index_ro.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cos/_cos_index_ro.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>query</find>
+      <find>red</find>
+      <find>produs</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../wwws.premitim.ro/assets/new/template.php" />
+        <option value="$PROJECT_DIR$/telefon.css" />
+        <option value="$PROJECT_DIR$/shoes.html" />
+        <option value="$PROJECT_DIR$/teme/standard/tema.php" />
+        <option value="$PROJECT_DIR$/acasa/_home_index.php" />
+        <option value="$PROJECT_DIR$/inc/base.php" />
+        <option value="$PROJECT_DIR$/acasa/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/contact/_acasa_index_ro.php" />
+        <option value="$PROJECT_DIR$/contact/index.php" />
+        <option value="$PROJECT_DIR$/autentificare/index.php" />
+        <option value="$PROJECT_DIR$/../wwws.premitim.ro/inc/mysql.php" />
+        <option value="$PROJECT_DIR$/inc/mysqli.php" />
+        <option value="$PROJECT_DIR$/cos/index.php" />
+        <option value="$PROJECT_DIR$/inc/config.php" />
+        <option value="$PROJECT_DIR$/autentificare/kerveny" />
+        <option value="$PROJECT_DIR$/autentificare/kerveny.php" />
+        <option value="$PROJECT_DIR$/autentificare/_autentificare_kerveny.php" />
+        <option value="$PROJECT_DIR$/contact/_contact_index_ro.php" />
+        <option value="$PROJECT_DIR$/produs/index.php" />
+        <option value="$PROJECT_DIR$/teme/standard/stil.css" />
+        <option value="$PROJECT_DIR$/acasa/_acasa_index_ro.php" />
+        <option value="$PROJECT_DIR$/autentificare/_autentificare_index_ro.php" />
+        <option value="$PROJECT_DIR$/cos/_cos_index_ro.php" />
+        <option value="$PROJECT_DIR$/inc/auth.php" />
+        <option value="$PROJECT_DIR$/produs/_produs_index_ro.php" />
+        <option value="$PROJECT_DIR$/teme/standard/standard.php" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+              <item name="acasa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+              <item name="autentificare" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+              <item name="cos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+              <item name="produs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+              <item name="teme" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sarah" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sarah" type="462c0819:PsiDirectoryNode" />
+              <item name="teme" type="462c0819:PsiDirectoryNode" />
+              <item name="standard" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/autentificare/kerveny" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\Sarah\autentificare" />
+      <recent name="C:\xampp\htdocs\Sarah\inc" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1b85b64-2296-4656-a6f8-c45257b95709" name="Default Changelist" comment="" />
+      <created>1556904126617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556904126617</updated>
+      <workItem from="1556904127722" duration="1991000" />
+      <workItem from="1556966515987" duration="1508000" />
+      <workItem from="1556984793460" duration="22366000" />
+      <workItem from="1557040021477" duration="8104000" />
+      <workItem from="1557056693165" duration="2405000" />
+      <workItem from="1557413778911" duration="7962000" />
+      <workItem from="1557497210792" duration="5026000" />
+      <workItem from="1557846028481" duration="8345000" />
+      <workItem from="1558032803944" duration="2836000" />
+      <workItem from="1558111668737" duration="254000" />
+      <workItem from="1558422744632" duration="5214000" />
+      <workItem from="1558441002286" duration="16335000" />
+      <workItem from="1559500219554" duration="146000" />
+      <workItem from="1584351075472" duration="74000" />
+      <workItem from="1584351261837" duration="668000" />
+      <workItem from="1584352786838" duration="644000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="83878000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.80859834" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32969603" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/teme/standard/vendor.css" />
+    <entry file="file://$PROJECT_DIR$/telefon.css" />
+    <entry file="file://$PROJECT_DIR$/../wwws.premitim.ro/assets/new/template.php" />
+    <entry file="file://$PROJECT_DIR$/inc/base.php" />
+    <entry file="file://$PROJECT_DIR$/shoes.html" />
+    <entry file="file://$PROJECT_DIR$/contact/_acasa_index_ro.php" />
+    <entry file="file://$PROJECT_DIR$/../wwws.premitim.ro/loged/_loged_cc.php" />
+    <entry file="file://$PROJECT_DIR$/../wwws.premitim.ro/loged/_loged_index.php" />
+    <entry file="file://$PROJECT_DIR$/../wwws.premitim.ro/inc/mysql.php" />
+    <entry file="file://$PROJECT_DIR$/../wwws.premitim.ro/inc/auth.php" />
+    <entry file="file://$PROJECT_DIR$/cos/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autentificare/kerveny" />
+    <entry file="file://$PROJECT_DIR$/contact/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autentificare/kerveny.php" />
+    <entry file="file://$PROJECT_DIR$/inc/mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autentificare/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produs/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acasa/_acasa_index_ro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acasa/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produs/_produs_index_ro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autentificare/_autentificare_index_ro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autentificare/_autentificare_kerveny.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact/_contact_index_ro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cos/_cos_index_ro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teme/standard/standard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="56" column="85" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shoes.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teme/standard/stil.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3383">
+          <caret line="199" column="7" selection-start-line="199" selection-start-column="7" selection-end-line="199" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

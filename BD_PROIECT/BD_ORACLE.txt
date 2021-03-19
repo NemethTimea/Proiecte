@@ -1,0 +1,363 @@
+BD-Oracle
+
+CREATE TABLE produse 
+(id_prod number(11) CONSTRAINT idp_const PRIMARY KEY, 
+	categorie number(11) NOT NULL, 
+	nume varchar(200) NOT NULL, 
+	pret number(11) NOT NULL, 
+	poza varchar2(100) CONSTRAINT poza_uniq UNIQUE, 
+	poza2 varchar2(200) CONSTRAINT poza2_uniq UNIQUE, 
+	nou number(1) NOT NULL);
+
+
+CREATE TABLE marimi ( 
+	id number(11) CONSTRAINT id_m PRIMARY KEY, 
+	id_prod number(11) NOT NULL, 
+	marime varchar2(10) NOT NULL,
+	bucati number(11) NOT NULL, 
+    CONSTRAINT const_idprod 
+        FOREIGN KEY(id_prod) REFERENCES produse(id_prod) 
+ );
+
+ 
+CREATE TABLE utilizatori (
+  id_ut number(11) CONSTRAINT const_idut PRIMARY KEY,
+  tip varchar2(20) NOT NULL, 
+  nume varchar2(200) NOT NULL, 
+  prenume varchar2(200) NOT NULL,
+  email varchar2(200) NOT NULL, 
+  oras varchar2(200) NOT NULL, 
+  judet varchar2(200) NOT NULL, 
+  data date NOT NULL,
+  username varchar2(200) NOT NULL,
+  password varchar2(200) NOT NULL
+ ) ;
+
+ CREATE TABLE vanzari (
+  id number(11) CONSTRAINT const_idvanz PRIMARY KEY,
+  id_ut number(11) NOT NULL,
+  id_prod number(11) NOT NULL,
+  numar number(11) NOT NULL,
+  CONSTRAINT foreign_idprod FOREIGN KEY (id_prod) references produse(id_prod),
+  CONSTRAINT foreign_idut FOREIGN KEY (id_ut) references utilizatori(id_ut)
+);
+DESCRIBE produse
+
+ALTER TABLE produse
+	ADD brand VARCHAR2(200)
+
+ALTER TABLE produse
+	MODIFY categorie VARCHAR2(20)
+ALTER TABLE produse
+	ADD CONSTRAINT gender CHECK (categorie in ('femei', 'barbati', 'copii'))
+
+DESCRIBE marimi
+
+ALTER TABLE marimi
+    MODIFY marime NUMBER(2)
+ALTER TABLE marimi
+    ADD CONSTRAINT CHK_marime CHECK (marime BETWEEN 35 AND 42);
+
+    DESCRIBE utilizatori
+
+ALTER TABLE utilizatori
+	ADD CONSTRAINT const_uniq_email UNIQUE (email)
+ALTER TABLE utilizatori
+	ADD CONSTRAINT const_uniq_usern UNIQUE (username)
+
+SELECT CONSTRAINT_NAME,CONSTRAINT_TYPE
+  FROM user_constraints
+ WHERE table_name = 'UTILIZATORI'
+
+ DESCRIBE vanzari
+ 
+ ALTER TABLE vanzari
+    ADD marime NUMBER(2)
+ALTER TABLE vanzari
+    ADD CONSTRAINT marime_vanzari CHECK (marime BETWEEN 35 AND 42);
+
+ALTER TABLE vanzari
+	 ADD CONSTRAINT chk CHECK (NUMAR between 0 and 10)
+
+SELECT CONSTRAINT_NAME,CONSTRAINT_TYPE
+  FROM user_constraints
+ WHERE table_name = 'VANZARI'
+
+ALTER TABLE vanzari
+	DROP CONSTRAINT chk
+----------------------------------------------------------------------------
+SELECT * FROM user_tables
+WHERE table_name in ('PRODUSE','MARIMI','UTILIZATORI','VANZARI')
+
+SELECT TABLE_NAME,CONSTRAINT_NAME,CONSTRAINT_TYPE,SEARCH_CONDITION,SEARCH_CONDITION_VC
+  FROM user_constraints
+ WHERE table_name = 'VANZARI'
+ ------------------------------------------------------------------------------
+
+SELECT 
+    index_name, 
+    index_type, 
+    visibility, 
+    status 
+FROM 
+    all_indexes
+WHERE 
+    table_name = 'PRODUSE';
+
+CREATE SEQUENCE from_one_sequence
+START WITH 1
+MINVALUE 1
+NOCACHE;
+
+CREATE SEQUENCE produse_sequence
+START WITH 1
+MINVALUE 1
+NOCACHE;
+
+CREATE SEQUENCE marimi_sequence
+START WITH 111
+MINVALUE 111
+NOCACHE;
+
+CREATE SEQUENCE from_hundred_sequence
+START WITH 111
+MINVALUE 111
+NOCACHE;
+
+
+select * from user_sequences
+
+DROP SEQUENCE b_index; 
+
+ALTER SEQUENCE from_hundred_sequence
+    MINVALUE 100
+    MAXVALUE 1111;
+
+ALTER SEQUENCE from_one_sequence
+    MAXVALUE 99999; 
+
+INSERT INTO utilizatori VALUES 
+(from_one_sequence.nextval,'fizica','Horvath','Brigitta','horvath15brigita@gmail.com','Arad','Arad',to_date('1899-11-15','YYYY-MM-DD'),'brigi','1234');
+INSERT INTO utilizatori VALUES 
+(from_one_sequence.nextval,'juridica','Ionut','Darian','darian_i@gmail.com','Cluj-Napoca','Cluj',to_date('1998-04-11','YYYY-MM-DD'),'ionut','5677');
+INSERT INTO utilizatori VALUES 
+(from_one_sequence.nextval,'juridica','Olly','Wander','ollywander21@gmail.com','Brasov','Brasov',to_date('1993-12-23','YYYY-MM-DD'),'olly12','1234');
+INSERT INTO utilizatori VALUES 
+(from_one_sequence.nextval,'fizica','Nemeth','Timea','srh.nemeth@gmail.com','Timisoara','Timis',to_date('2000-11-21','YYYY-MM-DD'),'timi','1111');
+
+DELETE
+FROM
+   utilizatori
+WHERE
+    id_ut = 112 OR id_ut = 115 OR id_ut = 113 OR id_ut = 114;
+
+ SELECT * from utilizatori order by id_ut
+
+ 
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'femei', 'Adidas Neo', 400, 'Adidas_Neo.jpg', 'Adidas_Neo2.jpg', 0, 'Adidas')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'barbati', 'Adidas Originals', 200, 'Adidas_Originals.jpg', 'Adidas_Originals2.jpg', 1, 'Adidas')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'copii', 'Adidas Performance', 350, 'Adidas_Performance.jpg', 'Adidas_Performance2.jpg', 0,'Adidas')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'barbati', 'Adidas Ultraboost', 268, 'Adidas_Ultraboost.jpg', 'Adidas_Ultraboost2.jpg', 1, 'Adidas')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'femei','Calvin Klein Jojo', 356, 'Calvin_Klein_.jpg', 'Calvin_Klein_.jpg', 1,'Calvin Klein')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'femei','Calvin Klein White', 425, 'Calvin_Klein_feher.jpg', 'Calvin_Klein_feher.jpg', 0,'Calvin Klein')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'copii','Calvin Klein Black', 450, 'Calvin_Klein_l.jpg', 'Calvin_Klein_l.jpg', 0,'Calvin Klein')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'femei','Converse All Star', 250, 'Converse_All_Star.jpg', 'Converse_All_Star2.jpg', 0,'Converse')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'barbati','Converse Chuck', 200, 'Converse_Chuck.jpg', 'Converse_Chuck2.jpg', 0,'Converse')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'femei','Converse Chuck Taylor', 270, 'Converse_Chuck_Taylor.jpg', 'Converse_Chuck_Taylor2.jpg', 0,'Converse')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'copii','Nike Air Vapormax', 499, 'Nike Air Vapormax.jpg', 'Nike Air Vapormax2.jpg', 1,'Nike')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'femei','Nike Air Max', 299, 'Nike_WMNS_Air_Max.jpg', 'Nike_WMNS_Air_Max2.jpg', 0, 'Nike')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'barbati', 'Nike Classic Cortez', 390, 'Pantofi_Nike_Classic_Cortez.jpg', 'Pantofi_Nike_Classic_Cortez2.jpg', 1,'Nike')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'copii','New Balance', 250, 'New_Balance.jpg', 'New_Balance2.jpg', 0,'New Balance')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'barbati', 'Chuck Taylor Mega', 460, 'Chuck_Taylor.jpg', 'Chuck_Taylor2.jpg', 1,'Chuck Taylor')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'femei','Puma Muse Maia', 390, 'Puma_Muse_Maia.jpg', 'Puma_Muse_Maia2.jpg', 1,'Puma')
+INSERT INTO produse VALUES 
+(produse_sequence.nextval,'barbati', 'Puma White Gold', 490, 'Puma_WhiteGold.jpg', 'Puma_WhiteGold2.jpg', 1,'Puma')
+
+ SELECT * from produse order by id_prod
+
+ DELETE 
+FROM
+   produse
+   where id_prod = 5 
+   OR id_prod = 6 
+   OR id_prod = 7 
+   OR id_prod = 8 
+   OR id_prod = 9 
+   OR id_prod = 10 
+   OR id_prod = 11
+   OR id_prod = 12 
+   OR id_prod = 13 
+   OR id_prod = 14 
+   OR id_prod = 15 
+   OR id_prod = 16 
+   OR id_prod = 17 
+   OR id_prod = 18 
+   OR id_prod = 19 
+   OR id_prod = 20 
+   OR id_prod = 21;
+
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 2, 35, 10)  111
+INSERT INTO marimi VALUES (marimi_sequence.nextval,  2, 36, 15)  112
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 10, 37, 15)   113
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 10, 38, 21)   114
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 3, 35, 15)  115
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 3, 36, 3)  116
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 1, 36, 10) 117 
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 6, 37, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 6, 38, 15)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 6, 39, 3)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 5, 37, 14)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 5, 40, 15)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 7, 35, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 7, 36, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 1, 37, 5)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 1, 38, 3)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 11, 35, 9)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 4, 41, 15)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 4, 42, 15)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 4, 40, 5)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 12, 36, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 12, 38, 15)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 13, 40, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 13, 42, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 14, 35, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 16, 37, 15)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 16, 38, 4)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 8, 39, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 15, 42, 5)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 15, 41, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 17, 40, 5)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 17, 41, 10)
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 9, 42, 12)
+
+ SELECT * from marimi order by id
+
+ /stergere un produs si refacere indecsi
+ 
+ SELECT * from produse order by id_prod
+delete from marimi where id = 116
+update marimi set id = 116 where id = 143
+drop sequence marimi_sequence
+create sequence marimi_sequence start with 143
+
+INSERT INTO marimi VALUES (marimi_sequence.nextval, 9, 40, 15)
+
+CREATE OR REPLACE VIEW afisare_produse_elegant
+AS  Select nume, categorie, brand, pret, decode(nou,0,'NU','DA') as "NOU" 
+from produse order by id_prod
+
+CREATE OR REPLACE VIEW afisare_produse_elegant
+AS  Select nume, categorie, brand, pret, decode(nou,0,'NU','DA') as "NOU" 
+from produse order by id_prod
+
+
+SELECT * from afisare_produse_elegant
+
+CREATE OR REPLACE VIEW vanzari_peproduse
+AS select p.nume, p.categorie, p.pret, sum(v.numar) as "Bucati vandute" from produse p, vanzari v
+    where p.id_prod = v.id_prod
+        group by p.nume, p.categorie, p.pret
+            order by nume 
+
+CREATE OR REPLACE VIEW Adidas_Nike_Converse_marimi
+AS select p.nume "Pantoful", LISTAGG(m.marime||' -> '||m.bucati||' bucati ','; ') within group (order by m.bucati desc) "Marimi"
+    from produse p, marimi m
+    where p.id_prod = m.id_prod and (p.brand = 'Adidas' or p.nume like 'Nike%' or p.nume like 'Converse%')
+        group by p.nume
+            order by p.nume
+
+SELECT * from Adidas_Nike_Converse_marimi
+
+DROP VIEW Adidas_Nike_Converse_marimi
+
+RENAME Adidas_Nike_Converse_marimi to "ANCM"
+DESCRIBE ANCM
+
+SELECT view_name from user_views 
+where view_name in ('AFISARE_PRODUSE_ELEGANT','ANCM','VANZARI_PEPRODUSE')
+
+**1**
+select brand,count(brand) as "Numar produse", to_char(max(pret))||' RON' as "Pretul cel mai scump" 
+    from produse 
+        group by brand
+**2**
+select u.nume,u.prenume,u.oras, u.email, p.nume, p.categorie, m.marime 
+    from produse p, utilizatori u, marimi m, vanzari v
+    where v.id_prod = p.id_prod and v.id_ut = u.id_ut and m.id_prod = p.id_prod 
+    and m.marime = (select max(m.marime) from vanzari v, produse p, marimi m 
+                        where p.id_prod = m.id_prod and p.id_prod = v.id_prod and v.id = 118
+                            group by v.id )
+    order by u.nume
+**3**
+select upper(categorie) as "Categorie",
+       LISTAGG(nume||' ('||to_char(pret)||' RON) ','; ') within group (order by nume) "Lista Produse", 
+       count(nume) as "Numar produse", to_char(sum(pret))||' RON' as "Pret total"
+    from produse
+        group by categorie
+            order by categorie desc
+
+**4**
+select p.id_prod, p.brand, p.categorie, p.nume, p.nou, to_char(p.pret)||' RON' as "Pret" 
+from produse p , (select avg(p.pret) media
+                from produse p, utilizatori u, vanzari v 
+                where p.id_prod = v.id_prod and u.id_ut = v.id_ut and u.oras = 'Arad') m
+    where p.pret >= m.media and p.nou = 1
+        order by p.id_prod asc
+**5**
+CREATE OR REPLACE VIEW Incadrare_pret
+AS select p.id_prod, p.nume, to_char(p.pret)||' RON' as "Pret", 
+    case when p.pret <=299 then 'IEFTIN'
+   when p.pret between 300 and 399 then 'RELATIV'
+   when p.pret between 400 and 499 then 'SCUMP'
+   else '-' end as "Incadrare"
+from produse p
+order by p.id_prod asc
+
+select * from Incadrare_pret
+
+**6**
+
+select u.nume, u.prenume, u.email, to_char(u.data,'DD-MONTH-YYYY') from utilizatori u
+
+INSERT INTO utilizatori VALUES 
+(from_one_sequence.nextval,'fizica','Filo','Betty','fff_betty@yahoo.com','Oradea','Bihor',to_date('1956-05-11','YYYY-MM-DD'),'ffbetty','13456771bttyf');
+ update utilizatori set id_ut = 5 where id_ut = 22
+
+ select u.id_ut as "Id-ul persoanei", u.nume as "Numele persoanei", u.prenume as "Prenumele persoanei", 
+        NVL(to_char(sum(n.numarb)), 'Nu a cumparat nimic.')  as "Numar produse cumparate"
+ from utilizatori u,( select u.id_ut ,sum(v.numar) numarb
+                            from utilizatori u JOIN vanzari v ON (u.id_ut = v.id_ut(+))
+                                group by u.id_ut) n
+where u.id_ut = n.id_ut
+ group by u.id_ut, u.nume, u.prenume
+ order by u.id_ut asc
+
+
+ select u.id_ut ,sum(v.numar) numarb
+ from utilizatori u JOIN vanzari v ON (u.id_ut = v.id_ut(+))
+ group by u.id_ut
+ order by u.id_ut asc
+
+select * from produse
+select * from vanzari
+select * from marimi
+select * from utilizatori
+
+alter table vanzari
+ drop column marime
